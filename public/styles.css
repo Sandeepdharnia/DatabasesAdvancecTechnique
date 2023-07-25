@@ -1,0 +1,110 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  height: 100vh; /* Set the height of the body to 100% of the viewport height */
+  margin: 0;
+}
+
+
+.container {
+  width: auto;
+  height: auto;
+  margin: 50px;
+  outline: solid 1px black;
+  display: grid;
+  justify-content: center;
+  background-color: navajowhite;
+  padding-left: 10px;
+
+
+}
+
+h1 {
+display: flex; /* Change from absolute positioning to inline-block */
+justify-content: center;
+margin: 0; /* Remove default margin */
+padding: 0.5em; /* Add padding to h1 to create space around it */
+}
+
+h2 {
+display: flex; /* Change from absolute positioning to inline-block */
+justify-content: center;
+margin: 0; /* Remove default margin */
+padding: 0.5em; /* Add padding to h2 to create space around it */
+}
+
+.container-button {
+  width: auto;
+  height: auto;
+  margin: 50px;
+  outline: solid 1px black;
+  display: grid;
+  justify-content: center;
+  background-color: navajowhite;
+  
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+}
+
+.button:hover{
+  background-color: palevioletred;
+}
+.table-container {
+  width: auto;
+  height: auto;
+  margin: 50px;
+  outline: solid 1px black;
+  display: grid;
+  justify-content: center;
+  background-color: navajowhite;
+}
+
+table {
+  table-layout: fixed;
+  /* width: 100vw;
+  height: 100vh;
+  border: 2px solid black;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px; */
+  
+} 
+th, td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  padding: 12px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+.country-table {
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+  /* horizontal scrollbar for tables if mobile screen */
+  .tablemobile {
+      overflow-x: auto;
+      display: block;
+  }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Databases and Advanced Data Technique</title>
+  <link rel="stylesheet"  href="/styles.css" type="text/css" media="all"/>
+</head>
+<body>
+
+
+    <div class="container">
+       
+        <h1>Databases and Advanced Data Technique</h1>
+        <h2>Country Data</h2>
+    </div>
+
+
+<div class="container-button">
+    <button class="button"><a href="/">Back To Main Page</a></button>
+</div>
+
+  <div class="table-container">
+    <table class="country-table">
+      <thead>
+        <tr>
+          <th>Country Name</th>
+          <th>Year</th>
+          <th>Status</th>
+          <th>Population</th>
+          <th>HIV/AIDS</th>
+          <th>GDP</th>
+          <th>BMI</th>
+          <th>Alcohol</th>
+          <th>Schooling</th>
+          <th>Life Expectancy</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% SelectedCountryYear.forEach(function(Country) { %>
+          <tr>
+            <td><%= Country.CountryName %></td>
+            <td><%= Country.Year_Data %></td>
+            <td><%= Country.Status_Data %></td>
+            <td><%= Country.Population %></td>
+            <td><%= Country.HIV_AIDS %></td>
+            <td><%= Country.GDP %></td>
+            <td><%= Country.BMI %></td>
+            <td><%= Country.Alcohol %></td>
+            <td><%= Country.Schooling %></td>
+            <td><%= Country.LifeExpectancy_Data %></td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </div>
+  <div class="container-button">
+  <button class="button"><a href="/search">Back To Selection</a></button>
+  <p>* If any value is 0, means data is not available.</p>
+</div>
+</body>
+</html>
